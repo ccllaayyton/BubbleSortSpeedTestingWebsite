@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <meta name="author" content="Clayton Schroeder">
+        <title>Hamilton</title>
+        <meta name="description" content="This page is to choose compare the sorting speeds of programing languages against one another">
+		
+    </head>
+    <body>
+    	<header>
+    		<h1>CS 120</h1>
+    		<h2>Xtreme Bubble Sort Ultimate Speed Challenge World Series</h2>
+			<p>Choose two programing languages and this website will compare the how fast they can sort. Each program will sort will sort 10 different datasets with increasing size and caluclate how long it takes.</p>
+    	</header>
+        <form enctype="multipart/form-data" action="SpeedSiteProcessing.php" method="POST">
+		<!--Slector for programing language 1-->
+        <label for="languages1">Choose Your First Programing Language:</label>
+            <select name="language1",id = "language1">
+                <option value="Python">Python</option>
+				<option value="Ruby">Ruby</option>
+				<option value="Java">Java</option>
+				<option value="C++">C++</option>               
+            </select>
+			<!--Slector for programing language 2-->
+        <br><label for="languages2">Choose Your Second Programing Language:</label>
+            <select name="language2",id = "language2">
+                <option value="Python">Python</option>
+				<option value="Ruby">Ruby</option>
+				<option value="Java">Java</option>
+				<option value="C++">C++</option>               
+            </select>
+			<br><input type="submit" value="Submit"/>
+		
+        </form>
+    </body>
+</html>
